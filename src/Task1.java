@@ -1,12 +1,10 @@
-public class Task1 {
 
-    public static void main(String[] args) {
-        int priceOfOneTicket = 3000;
-        int bonus = 20;
-        int miles = priceOfOneTicket / bonus;
-        System.out.println(miles);
+    public class Task1 {
 
-
-    }
-
-}
+            public static void main(String[] args) {
+                BonusMilesService service = new BonusMilesService();
+                int price = 10_000;
+                int miles = service.calculate(price);
+                System.out.println(miles);
+            }
+        }
